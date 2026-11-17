@@ -1,12 +1,12 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
-:root { color-scheme: dark; --bg:#111517; --surface:#1b2221; --text:#f3f1e9; --muted:#a7b0ad; --line:#343c3a; --accent:#d6e9a8; }
+:root { color-scheme: dark; --bg:#081426; --surface:#10213b; --text:#f1f6ff; --muted:#afbed5; --line:#293d5b; --accent:#80b5ff; --action:#2463db; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--bg); color:var(--text); font-family:"DM Sans", sans-serif; line-height:1.6; }
 ::selection { background:var(--accent); color:var(--bg); }
 a { color:inherit; }
 a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
-.skip-link { position:absolute; top:8px; left:8px; padding:10px 16px; background:var(--accent); color:#172017; z-index:5; transform:translateY(-160%); }
+.skip-link { position:absolute; top:8px; left:8px; padding:10px 16px; background:var(--accent); color:#081426; z-index:5; transform:translateY(-160%); }
 .skip-link:focus { transform:translateY(0); }
 .wrap { width:min(1120px, calc(100% - 64px)); margin:auto; }
 header { min-height:88px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid var(--line); }
@@ -19,8 +19,8 @@ nav a:hover, footer a:hover { color:var(--accent); text-decoration:underline; te
 h1,h2,h3,h4 { font-family:Manrope,sans-serif; letter-spacing:-.03em; line-height:1.15; text-wrap:balance; }
 h1 { max-width:750px; margin:0 0 24px; font-size:clamp(48px, 7vw, 82px); font-weight:700; }
 .intro { max-width:620px; color:var(--muted); font-size:18px; line-height:1.75; }
-.button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:12px 22px; margin-top:18px; border-radius:6px; background:var(--accent); color:#172017; text-decoration:none; font-weight:700; font-size:15px; transition:background-color 180ms ease; }
-.button:hover { background:#e4f4c0; }
+.button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:12px 22px; margin-top:18px; border-radius:6px; background:var(--accent); color:#081426; text-decoration:none; font-weight:700; font-size:15px; transition:background-color 180ms ease; }
+.button:hover { background:#a9ceff; }
 .hero-note { margin:0 0 5px; padding-top:18px; border-top:2px solid var(--accent); color:var(--muted); font-size:15px; }
 .section { padding:88px 0; border-top:1px solid var(--line); scroll-margin-top:24px; }
 .section-heading { display:flex; justify-content:space-between; align-items:end; gap:30px; margin-bottom:36px; }
@@ -28,7 +28,7 @@ h2 { font-size:clamp(36px, 4.5vw, 52px); margin:0; }
 .section-heading p, .about-heading p { max-width:320px; margin:0; color:var(--muted); }
 .projects { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
 .card { overflow:hidden; border:1px solid var(--line); border-radius:14px; background:var(--surface); transition:transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease; }
-.visual { height:245px; overflow:hidden; background:#283430; display:flex; align-items:center; justify-content:center; }
+.visual { height:245px; overflow:hidden; background:#162c4b; display:flex; align-items:center; justify-content:center; }
 .visual img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
 .window { width:65%; height:60%; border:1px solid #90a6b0; border-radius:6px; }
 .card-body { padding:26px 28px 30px; }
@@ -59,7 +59,7 @@ footer a { text-underline-offset:4px; }
 .about { grid-template-columns:260px minmax(0,1fr); gap:32px 56px; align-items:start; }
 .about-heading { grid-column:1 / -1; }
 .about-heading p { max-width:620px; }
-.profile-frame { width:240px; height:240px; padding:8px; margin:0; background:var(--surface); border:1px solid #53654f; border-radius:14px; overflow:hidden; }
+.profile-frame { width:240px; height:240px; padding:8px; margin:0; background:var(--surface); border:1px solid #365b88; border-radius:14px; overflow:hidden; }
 .about-content { max-width:680px; min-width:0; }
 .about-content h3 { font-size:clamp(25px,3vw,34px); }
 .about-content h4 { color:var(--accent); margin-top:28px; }
@@ -67,3 +67,33 @@ footer a { text-underline-offset:4px; }
 .about-content li { border-top:1px solid var(--line); padding:12px 0; }
 .about-content li + li { margin:0; }
 @media (max-width:700px) { .about { grid-template-columns:1fr; gap:28px; } .profile-frame { width:200px; height:200px; } }
+
+/* Sobre mí: lectura principal y ficha personal, sin tarjetas anidadas. */
+.biography-layout { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:80px; align-items:start; }
+.biography-main { min-width:0; }
+.biography-intro { font-size:18px; line-height:1.85; color:var(--muted); margin:24px 0 40px; max-width:65ch; }
+.biography-goals h3 { font-size:22px; margin:0 0 10px; }
+.biography-goals ul { list-style:none; padding:0; margin:0; }
+.biography-goals li { padding:20px 0; border-bottom:1px solid var(--line); }
+.biography-goals strong { font-size:16px; font-weight:600; color:var(--accent); }
+.biography-goals p { margin:5px 0 0; font-size:15px; color:var(--muted); line-height:1.65; }
+.biography-profile { background:var(--surface); border-radius:16px; padding:28px; }
+.biography-photo { display:block; width:100%; height:auto; aspect-ratio:1; object-fit:cover; object-position:center; border-radius:10px; }
+.biography-profile h3 { font-size:25px; line-height:1.3; margin:24px 0 8px; }
+.biography-role { font-size:15px; color:var(--accent); margin:0; }
+.biography-profile dl { border-top:1px solid var(--line); margin:24px 0 0; padding-top:20px; }
+.biography-profile dt { font-size:12px; color:var(--muted); margin-top:16px; }
+.biography-profile dt:first-child { margin-top:0; }
+.biography-profile dd { margin:4px 0 0; font-size:14px; }
+@media(max-width:850px) { .biography-layout { gap:36px; grid-template-columns:minmax(0,1fr) 270px; } }
+@media(max-width:650px) { .biography-layout { display:flex; flex-direction:column; gap:32px; } .biography-main { display:contents; } .biography-main h2 { order:0; } .biography-intro { order:1; margin: -12px 0 0; font-size:16px; } .biography-profile { order:2; width:100%; } .biography-photo { width:180px; height:180px; } .biography-goals { order:3; width:100%; } }
+
+/* Paleta marina e imagen vectorial decorativa de fondo. */
+body { background-image:linear-gradient(90deg,rgba(8,20,38,.05),rgba(8,20,38,.4) 45%,rgba(8,20,38,.05)),url("imagenes/fondo-azul.svg?v=mar-1"); background-repeat:no-repeat; background-size:100% 100%; background-position:center top; }
+.button { background:var(--action); color:#fff; gap:12px; }
+.button:hover { background:#194fb8; }
+.ui-icon { width:18px; height:18px; display:inline-block; vertical-align:middle; }
+.biography-profile { background:#10213b; }
+a { touch-action:manipulation; -webkit-tap-highlight-color:#365b88; }
+html { scrollbar-color:#365b88 var(--bg); }
+@media(max-width:700px) { body { background-size:100% 100%,auto 100%; } }

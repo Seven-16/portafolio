@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2400" viewBox="0 0 1600 2400" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="depth" x2=".3" y2="1"><stop stop-color="#0c233c"/><stop offset=".45" stop-color="#081426"/><stop offset="1" stop-color="#0b273b"/></linearGradient>
+    <linearGradient id="water" x1="0" x2="1"><stop stop-color="#225779" stop-opacity=".24"/><stop offset=".5" stop-color="#163b61" stop-opacity=".06"/><stop offset="1" stop-color="#28658b" stop-opacity=".26"/></linearGradient>
+    <linearGradient id="crest"><stop stop-color="#64a5c6" stop-opacity=".18"/><stop offset=".45" stop-color="#588eb2" stop-opacity=".03"/><stop offset="1" stop-color="#78bed8" stop-opacity=".18"/></linearGradient>
+  </defs>
+  <path fill="url(#depth)" d="M0 0H1600V2400H0Z"/>
+  <g fill="url(#water)">
+    <path d="M0 100C340 300 550 20 930 160S1350 370 1600 210V370C1260 460 1080 230 760 270S230 450 0 250Z"/>
+    <path d="M0 730C370 510 540 880 940 760S1320 610 1600 740V910C1260 720 1050 900 760 920S290 670 0 920Z"/>
+    <path d="M0 1340C320 1500 550 1150 900 1280S1330 1500 1600 1310V1490C1270 1630 1080 1370 780 1410S280 1630 0 1490Z"/>
+    <path d="M0 2020C300 1800 580 2130 920 1990S1360 1850 1600 1990V2170C1270 2010 1070 2210 740 2190S260 1950 0 2220Z"/>
+  </g>
+  <g fill="none" stroke="url(#crest)" stroke-width="1.2">
+    <path d="M-50 90C340 300 550 20 930 160S1350 370 1650 190"/>
+    <path d="M-50 120C340 330 550 50 930 190S1350 400 1650 220"/>
+    <path d="M-50 155C340 365 550 85 930 225S1350 435 1650 255"/>
+    <path d="M-50 760C370 510 540 880 940 760S1320 610 1650 760"/>
+    <path d="M-50 800C370 550 540 920 940 800S1320 650 1650 800"/>
+    <path d="M-50 845C370 595 540 965 940 845S1320 695 1650 845"/>
+    <path d="M-50 1320C320 1500 550 1150 900 1280S1330 1500 1650 1280"/>
+    <path d="M-50 1360C320 1540 550 1190 900 1320S1330 1540 1650 1320"/>
+    <path d="M-50 1405C320 1585 550 1235 900 1365S1330 1585 1650 1365"/>
+    <path d="M-50 2050C300 1800 580 2130 920 1990S1360 1850 1650 2020"/>
+    <path d="M-50 2090C300 1840 580 2170 920 2030S1360 1890 1650 2060"/>
+    <path d="M-50 2135C300 1885 580 2215 920 2075S1360 1935 1650 2105"/>
+  </g>
+</svg>
