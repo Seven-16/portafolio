@@ -305,3 +305,38 @@ footer a {
   object-position: top;
   display: block;
 }
+
+/* Selección suave de proyectos con ratón o navegación por teclado. */
+.card {
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.card:focus-within {
+  border-color: var(--lime);
+  box-shadow: 0 0 0 1px rgba(214, 233, 168, 0.18);
+}
+
+/* Evita efectos hover persistentes al tocar una pantalla móvil. */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(214, 233, 168, 0.6);
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.2),
+      0 0 18px rgba(214, 233, 168, 0.08);
+  }
+}
+
+/* Mantiene el borde iluminado, sin desplazamiento ni animación. */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
