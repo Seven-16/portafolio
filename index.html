@@ -1,80 +1,49 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portafolio de Aarón Carmona, programador junior egresado del ITLA."
-    />
-    <title>Aarón Carmona — Portafolio</title>
-    <link rel="stylesheet" href="estilos.css?v=hover-1" />
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
-        <a class="brand" href="#inicio" aria-label="Aarón Carmona, inicio"
-          >ac<span>.</span></a
-        >
-        <nav aria-label="Navegación principal">
-          <a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a>
-        </nav>
-      </header>
-      <main>
-        <section class="hero" id="inicio">
-          <div>
-            <div class="eyebrow">
-              <span class="dot"></span> Portafolio · Desarrollo web
-            </div>
-            <h1>
-              Hola, soy Aarón<span style="color: var(--lime)">.</span><br /><em
-                >Creo para la web.</em
-              >
-            </h1>
-            <p class="intro">
-              Programador junior, recién egresado del ITLA. Un espacio para compartir los
-              proyectos que he construido y lo que he aprendido en el camino.
-            </p>
-            <a class="button" href="#proyectos"
-              >Explorar proyectos <span aria-hidden="true">↘</span></a
-            >
-          </div>
-          <div class="hero-note">
-            <strong>Ideas que toman forma.</strong>Diseño y desarrollo con atención a los
-            detalles y a las personas que usan cada producto.
-          </div>
-        </section>
-        <section class="section" id="proyectos">
-          <div class="section-heading">
-            <div>
-              <div class="eyebrow">
-                <span class="dot"></span> Una selección de mi trabajo
-              </div>
-              <h2>Proyectos<span style="color: var(--lime)">.</span></h2>
-            </div>
-            <p>
-              Una mirada a lo que he estado construyendo. Cada proyecto tiene algo que
-              contar.
-            </p>
-          </div>
-          <div class="projects" id="lista-proyectos"></div>
-        </section>
-        <section class="section about" id="sobre-mi">
-          <div>
-            <div class="eyebrow"><span class="dot"></span> Un poco sobre mí</div>
-            <h2>Detrás del código<span style="color: var(--lime)">.</span></h2>
-          </div>
-          <p>
-            Soy Aarón Carmona, programador junior y egresado del ITLA. Comencé mi
-            formación en mayo de 2023 y recibí mi título en octubre de 2026. Me entusiasma
-            seguir aprendiendo y convertir ideas en experiencias digitales útiles.
-          </p>
-        </section>
-      </main>
-      <footer>
-        <span>© 2026 Aarón Carmona</span><a href="#inicio">Volver arriba ↑</a>
-      </footer>
-    </div>
-    <script src="proyectos.js" defer></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portafolio de Aarón Carmona, programador junior egresado del ITLA." />
+  <title>Aarón Carmona — Portafolio</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#inicio" aria-label="Aarón Carmona, inicio">Aarón Carmona<span>.</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div>
+          <h1>Ideas que toman forma en la web.</h1>
+          <p class="intro">Soy Aarón Carmona, programador junior egresado del ITLA. Aquí comparto los proyectos que he construido y lo que he aprendido en el camino.</p>
+          <a class="button" href="#proyectos">Ver proyectos</a>
+        </div>
+        <p class="hero-note">Desarrollo web con atención a los detalles y a las personas que usan cada producto.</p>
+      </section>
+      <section class="section" id="proyectos">
+        <div class="section-heading">
+          <h2>Proyectos</h2>
+          <p>Una selección de mi trabajo y de lo que he aprendido al construirlo.</p>
+        </div>
+        <div class="projects" id="lista-proyectos"></div>
+      </section>
+      <section class="section about" id="sobre-mi">
+        <div class="about-heading"><h2>Sobre mí</h2><p>Soy programador junior, egresado del ITLA, y me entusiasma crear experiencias digitales útiles.</p><img class="profile-photo" src="imagenes/yo%20(2).jpeg" alt="Fotografía de Aarón Gabriel Carmona Tavárez" width="900" height="1600" loading="lazy" /></div>
+        <div class="about-content">
+          <h3>Aarón Gabriel Carmona Tavárez</h3>
+          <p>Soy programador junior y egresado del ITLA. Comencé mi formación en mayo de 2023 y recibí mi título en octubre de 2026.</p>
+          <h4>Mis objetivos</h4>
+          <ul><li>Ampliar mi conjunto de habilidades y tecnologías.</li><li>Adquirir experiencia en desarrollo de software.</li><li>Contribuir a la modernización mediante tecnologías actuales y avanzadas.</li></ul>
+        </div>
+      </section>
+    </main>
+    <footer><span>© 2026 Aarón Carmona</span><a href="#inicio">Volver arriba ↑</a></footer>
+  </div>
+  <script src="proyectos.js" defer></script>
+</body>
 </html>
