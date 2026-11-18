@@ -1,0 +1,80 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#contenido"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - link "Aarón Carmona, inicio" [ref=e5] [cursor=pointer]:
+        - /url: "#inicio"
+        - text: Aarón Carmona.
+      - navigation "Navegación principal" [ref=e6]:
+        - link "Proyectos" [ref=e7] [cursor=pointer]:
+          - /url: "#proyectos"
+        - link "Sobre mí" [ref=e8] [cursor=pointer]:
+          - /url: "#sobre-mi"
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - heading "Ideas que toman forma en la web." [level=1] [ref=e12]
+          - paragraph [ref=e13]: Soy Aarón Carmona, programador junior egresado del ITLA. Aquí comparto los proyectos que he construido y lo que he aprendido en el camino.
+          - link "Ver proyectos" [ref=e14] [cursor=pointer]:
+            - /url: "#proyectos"
+        - paragraph [ref=e15]: Desarrollo web con atención a los detalles y a las personas que usan cada producto.
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - heading "Proyectos" [level=2] [ref=e18]
+          - paragraph [ref=e19]: Una selección de mi trabajo y de lo que he aprendido al construirlo.
+        - generic [ref=e20]:
+          - article [ref=e21]:
+            - generic [ref=e23]:
+              - text: 01 / PROYECTO
+              - heading "Agenda de Citas Médicas" [level=3] [ref=e24]
+              - paragraph [ref=e25]: Un sistema de agenda sencillo con puro JavaScript para aprender lo básico del lenguaje y experimentar diseños UX/UI
+              - link "Ver Agenda de Citas Médicas (abre en una pestaña nueva)" [ref=e26] [cursor=pointer]:
+                - /url: https://seven-16.github.io/CitaMedica/index.html
+                - text: Ver proyecto ↗
+          - article [ref=e27]:
+            - generic [ref=e29]:
+              - text: 02 / PROYECTO
+              - heading "Wikipedia DanDaDan" [level=3] [ref=e30]
+              - paragraph [ref=e31]: Una Wiki de mi anime favorito DanDaDan.
+              - link "Ver Wikipedia DanDaDan (abre en una pestaña nueva)" [ref=e32] [cursor=pointer]:
+                - /url: https://seven-16.github.io/Dandadan/
+                - text: Ver proyecto ↗
+          - article [ref=e33]:
+            - generic [ref=e35]:
+              - text: 03 / PROYECTO
+              - heading "Flores Amarillas" [level=3] [ref=e36]
+              - paragraph [ref=e37]: Una página que hice como regalo sin fines de negocio, creada con amor para una persona especial
+              - link "Ver Flores Amarillas (abre en una pestaña nueva)" [ref=e38] [cursor=pointer]:
+                - /url: https://floresamarillas-rust-five.vercel.app/
+                - text: Ver proyecto ↗
+      - region "Sobre mí" [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - heading "Sobre mí" [level=2] [ref=e42]
+            - paragraph [ref=e43]: Me considero alguien creativo, no me gusta diseñar ideas aburridas que su única función solo sea administrar datos, me entusiasma crear experiencias digitales útiles y agradables al público. Con un toque característico de innovación y atención al detalle. Se podría decir que es como mi firma digital.
+            - generic [ref=e44]:
+              - heading "Mis objetivos" [level=3] [ref=e45]
+              - list [ref=e46]:
+                - listitem [ref=e47]:
+                  - strong [ref=e48]: Ampliar mis habilidades
+                  - paragraph [ref=e49]: Expandir mi stack y aprender nuevas tecnologías.
+                - listitem [ref=e50]:
+                  - strong [ref=e51]: Crecer con experiencia
+                  - paragraph [ref=e52]: Adquirir experiencia en el área de desarrollo de software.
+                - listitem [ref=e53]:
+                  - strong [ref=e54]: Contribuir a la modernización
+                  - paragraph [ref=e55]: Crear soluciones con tecnologías actuales y avanzadas.
+          - complementary "Perfil y formación" [ref=e56]:
+            - img "Aarón Gabriel Carmona Tavárez" [ref=e57]
+            - heading "Aarón Gabriel Carmona Tavárez" [level=3] [ref=e58]: Aarón GabrielCarmona Tavárez
+            - paragraph [ref=e59]: Programador junior
+            - generic [ref=e60]:
+              - term [ref=e61]: Formación
+              - definition [ref=e62]: Egresado del ITLA
+              - term [ref=e63]: Período de estudios
+              - definition [ref=e64]: Mayo 2023 – octubre 2026
+    - contentinfo [ref=e65]:
+      - generic [ref=e66]: © 2026 Aarón Carmona
+      - link "Volver arriba ↑" [ref=e67] [cursor=pointer]:
+        - /url: "#inicio"
