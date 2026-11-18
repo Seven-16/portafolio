@@ -20,6 +20,13 @@ const proyectos = [
     url: "https://floresamarillas-rust-five.vercel.app/",
     imagen: "imagenes/flores.png",
   },
+  {
+    titulo: "Pokédex",
+    descripcion:
+      "Una tarea antigua para aprender los conceptos de API RESTful. Contiene React y FastApi en su elaboración",
+    url: "https://pokedex-aaron.vercel.app/?page=2",
+    imagen: "imagenes/pokedex.png",
+  },
 ];
 const lista = document.querySelector("#lista-proyectos");
 proyectos.forEach((proyecto, indice) => {
